@@ -1,0 +1,8 @@
+<h1>Hi there</h1>
+
+<ul>
+<% @students.each do |student| %>
+<% # I omit the '=' sign in ERB tags when I don't want the result of the expression to be inserted into the HTML document %>
+  <li><%= student["name"] %></li>
+<% end %>
+</ul>
